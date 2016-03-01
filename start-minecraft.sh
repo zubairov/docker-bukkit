@@ -19,5 +19,5 @@ cd /data
 if [[ "$TRAVIS" = true ]]; then
     echo "stop" | java -jar /minecraft/craftbukkit-1.8.8.jar
 else
-    java -jar /minecraft/craftbukkit-1.8.8.jar
+    java ${JAVA_OPTS} -jar /minecraft/craftbukkit-1.8.8.jar
 fi
